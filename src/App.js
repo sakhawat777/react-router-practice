@@ -10,6 +10,7 @@ function App() {
 			<BrowserRouter>
 				<Routes>
 					<Route path='/home' element={<Home />} />
+					{/* :friendId - URL Parameter (Dynamic URL Parameter) */}
 					<Route path='/friend/:friendId' element={<FriendDetails />} />
 					<Route path='/' element={<Home />} />
 					<Route path='*' element={<NoMatch />} />
