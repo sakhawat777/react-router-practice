@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 
 const Friend = (props) => {
 	const { name, email, id } = props.friend;
+	// router hook
 	const navigate = useNavigate();
 
 	const handleClick = (friendId) => {
