@@ -1,13 +1,13 @@
 import React from 'react';
-import { Link, useHistory } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Friend = (props) => {
 	const { name, email, id } = props.friend;
-	const history = useHistory();
+	const navigate = useNavigate();
 
 	const handleClick = (friendId) => {
 		const url = `/friend/${friendId}`;
-		history.push(url);
+		navigate(url);
 	};
 	const friendStyle = {
 		border: '1px solid purple',
