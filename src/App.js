@@ -3,7 +3,6 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import FriendDetails from './components/FriendDetails/FriendDetails';
 import Home from './components/Home/Home';
 import NoMatch from './components/NoMatch/NoMatch';
-import Friend from './components/Friend/Friend';
 
 function App() {
 	return (
