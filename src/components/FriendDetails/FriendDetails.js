@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 const FriendDetails = () => {
+	// We used 'useParams' hook here to access the dynamic pieces of the URL.
 	const { friendId } = useParams();
 	const [friend, setFriend] = useState({});
 	useEffect(() => {

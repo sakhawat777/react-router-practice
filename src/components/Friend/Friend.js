@@ -3,7 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 
 const Friend = (props) => {
 	const { name, email, id } = props.friend;
-	// router hook
+	// // We used 'useNavigate' hook here to access the dynamic pieces of the URL.
 	const navigate = useNavigate();
 
 	const handleClick = (friendId) => {
